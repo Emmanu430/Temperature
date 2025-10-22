@@ -14,7 +14,7 @@
         <p>Conversion Made Easier</p>
         <input id="temp" placeholder="Enter Temperature">
         <select id="unit">
-            <option value="Celsuis">&deg;C</option>
+            <option value="Celsius">&deg;C</option>
             <option value="Fahrenheit">&deg;F</option>
         </select>
         <div class="button"><button onclick="myConversion()">Convert</button></div>
@@ -26,7 +26,7 @@
             let temperature = Number(document.getElementById('temp').value);
             let selection = document.getElementById('unit').value;
             let result;
-            if (selection === 'Celsuis'){
+            if (selection === 'Celsius'){
                 result = (temperature * 9/5) + 32;
                 document.getElementById('answer').innerHTML = temperature + "&deg;C =" + " " + result.toFixed(2) + '&deg;F';
             } else{
